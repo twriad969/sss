@@ -237,7 +237,7 @@ async function downloadVideo(url) {
 async function generateVerificationLink(userId) {
     const uniqueCode = generateUniqueCode();
     verificationCodes[uniqueCode] = userId;
-    const verifyUrl = `https://telegram.me/save_res_robot?start=${uniqueCode}`;
+    const verifyUrl = `https://telegram.me/TeraboxAdsFreeBot?start=${uniqueCode}`;
     const shortenResponse = await axios.get(`${shortlinkAPI}${encodeURIComponent(verifyUrl)}`);
     const shortUrl = shortenResponse.data.shortenedUrl;
     return shortUrl;

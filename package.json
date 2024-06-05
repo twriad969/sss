@@ -2,9 +2,9 @@
   "name": "terabox-downloader-bot",
   "version": "1.0.0",
   "description": "A Telegram bot to download and stream videos from Terabox links.",
-  "main": "bot.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node index.js"
   },
   "engines": {
     "node": ">=14.0.0"
